@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Javascript 1</title>
+</head>
+<body>
+    <h2>Menghitung Luas dan keliling</h2>
+    <span id="phi"></span>
+    <br>
+    <span id="jari"></span>
+    <br>
+    <span id="luas"></span>
+    <br>
+    <span id="keliling"></span>
+
+    <script>
+        const phi = 3.14;
+        let r = 10;
+        let luas = phi * r * r;
+        let keliling = phi * (2 * r);
+
+        document.getElementById("phi").innerHTML = "phi : " + phi;
+        document.getElementById("jari").innerHTML = "jari : " + r;
+        document.getElementById("luas").innerHTML = "luas : " + luas;
+        document.getElementById("keliling").innerHTML = "keliling : " + keliling;
+    </script>
+</body>
+</html>

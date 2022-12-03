@@ -1,0 +1,47 @@
+
+body {
+    min-height: 100vh;
+    display: flex;
+    margin: 0;
+    color: white;
+    padding: 0px;
+}
+
+.container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    flex-grow: 1;
+}
+
+article, aside {
+    min-width: 20vw;
+}
+footer, header {
+    min-height:20vh;
+}
+
+nav {
+    background-color: darkgoldenrod;
+    min-width: 20vw;
+}
+header {
+    background-color: blue;
+}
+article {
+    background-color: darkorchid;
+    flex-grow: 1;
+}
+aside {
+    background-color: darkcyan;
+}
+footer {
+    background-color: blue;
+}
+
+nav, header, article, aside, footer {
+}

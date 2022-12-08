@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Menampilkan Gambar dengan Alert</title>
+</head>
+<body>
+    <select id="my-select">
+        <option>Pilih gambar:</option>
+        <option value="Gorila.jpg">Gorila</option>
+        <option value="elang.jpg">elang</option>
+        <option value="singa.jpg">singa</option>
+        <option value="gambar3.jpg">ikan</option>
+        <option value="gambar4.jpg">ikan2</option>
+      </select>
+      <br>
+      <br>
+      <img  id="my-image" width="30%">
+      
+  <script>
+    var select = document.getElementById("my-select");
+    var img = document.getElementById("my-image");
+
+    select.addEventListener("change", function() {
+    img.src = this.value;
+    });
+
+    img.addEventListener("load", function() {
+    alert("ini Gambar " + this.src );
+    });
+  </script>
+</body>
+</html>

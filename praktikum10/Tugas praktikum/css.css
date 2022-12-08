@@ -1,0 +1,11 @@
+#form-validation {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial;
+    }
+    
+    #form-validation label {
+    display: block;
+    margin-bottom: 10px;
+    }

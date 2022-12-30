@@ -1,34 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="form.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="form.css">
 </head>
 <body>
-    <form name="myForm" onsubmit="return validateForm()">
-        <label for="nama">Nama Pelanggan:</label><br>
-        <input type="text" id="nama" name="nama" required><br>
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required><br>
-        <label for="jam">Jam Keberangkatan:</label><br>
-        <input type="time" id="jam" name="jam" required><br>
-        <label for="tujuan">Tujuan Keberangkatan:</label><br>
-        <select id="tujuan" name="tujuan" required>
-          <option value=""></option>
-          <option value="Jakarta">Jakarta</option>
-          <option value="Surabaya">Surabaya</option>
-          <option value="Bandung">Bandung</option>
-        </select><br>
-        <label for="jumlah">Jumlah Tiket:</label><br>
-        <input type="number" id="jumlah" name="jumlah" min="1" max="10" required><br><br>
-        <input type="submit" value="Kirim">
-      </form>
-      
-      <div id="error-message"></div>
-      
-      <script src="form.js"></script>
+  <form id="form-validation">
+    <label for="name">Nama Pelanggan:</label><br>
+    <input type="text" id="name" name="name"><br>
+    <div class="error" id="name-error"></div>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email"><br>
+    <div class="error" id="email-error"></div>
+    <label for="departure-time">Jam Keberangkatan:</label><br>
+    <input type="time" id="departure-time" name="departure-time"><br>
+    <div class="error" id="departure-error"></div>
+    <label for="destination">Tujuan Keberangkatan:</label><br>
+    <input type="text" id="destination" name="destination"><br>
+    <div class="error" id="destination-error"></div>
+    <label for="ticket-quantity">Jumlah Tiket:</label><br>
+    <input type="number" id="ticket-quantity" name="ticket-quantity"><br>
+    <div class="error" id="tiket-error"></div>
+    <br>
+    <input type="submit" value="Submit">
+  </form>
+  <style>
+    .error {
+      color: red;
+    }
+  </style> 
+  <div id="output"></div>
+  <script src="form.js">
+</script>
 </body>
 </html>
